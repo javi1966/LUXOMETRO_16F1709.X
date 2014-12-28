@@ -1,0 +1,19 @@
+_snd4094: CODE, 1520 0 44
+__stringdata: STRCODE, 1792 0 5
+___ftpack: CODE, 1112 0 96
+_initPD3535: CODE, 1644 0 19
+_main: CODE, 79 0 412
+___lltoft: CODE, 1564 0 42
+___lmul: CODE, 1422 0 50
+__initialization: CODE, 52 0 23
+___lldiv: CODE, 1208 0 83
+_isr: CODE, 4 0 46
+___ftmul: CODE, 491 0 180
+_disChar: CODE, 1606 0 38
+___llmod: CODE, 1291 0 67
+_ltoa: CODE, 1472 0 48
+_ultoa: CODE, 840 0 137
+___fttol: CODE, 977 0 135
+_printVal: CODE, 1358 0 64
+___ftdiv: CODE, 671 0 169
+Total: 1658

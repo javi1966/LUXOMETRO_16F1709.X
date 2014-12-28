@@ -1,0 +1,882 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$D:\t133643\AppData\Local\Temp\s3d0.obj
+end_init CODE 0 32 32 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production\LUXOMETRO_16F1709.X.production.obj
+cinit CODE 0 34 34 1B 2
+intentry CODE 0 4 4 2E 2
+text14 CODE 0 458 458 60 2
+text13 CODE 0 29F 29F A9 2
+text12 CODE 0 1EB 1EB B4 2
+text11 CODE 0 3D1 3D1 87 2
+text10 CODE 0 61C 61C 2A 2
+text9 CODE 0 58E 58E 32 2
+text8 CODE 0 5F0 5F0 2C 2
+text7 CODE 0 66C 66C 13 2
+text6 CODE 0 4B8 4B8 53 2
+text5 CODE 0 50B 50B 43 2
+text4 CODE 0 348 348 89 2
+text3 CODE 0 5C0 5C0 30 2
+text2 CODE 0 646 646 26 2
+text1 CODE 0 54E 54E 40 2
+maintext CODE 0 4F 4F 19C 2
+cstackBANK0 BANK0 1 20 20 3C 1
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK1 BANK1 1 B7 B7 6 1
+clrtext CODE 0 67F 67F 6 2
+bssBANK1 BANK1 1 A0 A0 17 1
+bssBANK0 BANK0 1 5C 5C F 1
+dataCOMMON COMMON 1 7A 7A 2 1
+stringtext STRCODE 0 700 700 5 2
+idataCOMMON CODE 0 705 705 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0006B-0006F 1
+BANK1 000BD-000EF 1
+BANK10 00520-0056F 1
+BANK11 005A0-005EF 1
+BANK12 00620-0064F 1
+BANK2 00120-0016F 1
+BANK3 001A0-001EF 1
+BANK4 00220-0026F 1
+BANK5 002A0-002EF 1
+BANK6 00320-0036F 1
+BANK7 003A0-003EF 1
+BANK8 00420-0046F 1
+BANK9 004A0-004EF 1
+BIGRAM 02000-023EF 1
+CODE 00002-00003 2
+CODE 00685-006FF 2
+CODE 00707-01FFF 2
+COMMON 0007C-0007D 1
+CONST 00002-00003 2
+CONST 00685-006FF 2
+CONST 00707-01FFF 2
+ENTRY 00002-00003 2
+ENTRY 00685-006FF 2
+ENTRY 00707-01FFF 2
+IDLOC 08000-08003 2
+RAM 0006B-0006F 1
+RAM 000BD-000EF 1
+RAM 00120-0016F 1
+RAM 001A0-001EF 1
+RAM 00220-0026F 1
+RAM 002A0-002EF 1
+RAM 00320-0036F 1
+RAM 003A0-003EF 1
+RAM 00420-0046F 1
+RAM 004A0-004EF 1
+RAM 00520-0056F 1
+RAM 005A0-005EF 1
+RAM 00620-0064F 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0051F 1
+SFR11 00580-0059F 1
+SFR12 00600-0061F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0011F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-0019F 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0021F 1
+SFR5 00280-0029F 1
+SFR6 00300-0031F 1
+SFR7 00380-0039F 1
+SFR8 00400-0041F 1
+SFR9 00480-0049F 1
+STACK 0206D-0231F 1
+STRCODE 00002-00003 2
+STRCODE 00685-006FF 2
+STRCODE 00707-01FFF 2
+STRING 00002-00003 2
+STRING 00685-006FF 2
+STRING 00707-01FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LUXOMETRO_16F1709.X.production.obj
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":139 4 intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":145 9 intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":147 B intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":148 1A intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":150 25 intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":151 28 intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":154 2C intentry CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":157 2D intentry CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2204 34 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2207 34 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2275 34 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2276 35 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2277 36 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2278 37 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2279 38 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2280 39 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2284 3C cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2285 3D cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2286 3E cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2287 3F cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2288 40 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2289 41 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2294 44 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2295 47 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2296 48 cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2297 4A cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2303 4B cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2304 4B cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2305 4C cinit CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2306 4D cinit CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":36 4F maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":43 4F maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":44 54 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":47 56 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":48 58 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":50 5A maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":51 5C maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":54 5E maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":55 60 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":56 62 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":57 63 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":58 64 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":59 65 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":63 67 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":66 69 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":67 6C maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":68 6F maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":69 70 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":70 74 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":71 76 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":72 7A maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":77 7B maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":78 8A maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":79 8E maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":80 9C maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":81 A0 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":77 AE maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":83 C0 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":85 C4 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":90 CC maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":91 CD maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":94 CE maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":99 DC maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":108 E1 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":110 E9 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":112 F9 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":114 FD maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":110 123 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":117 135 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":118 13D maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":124 18B maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":125 1D0 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":126 1E0 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":128 1E8 maintext CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\main.c":96 1EA maintext CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":62 1EB text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":67 1EB text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":68 1FB text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":69 202 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":70 211 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":71 218 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":72 21D text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":73 22D text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":74 23D text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":75 241 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":77 242 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":78 243 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":79 249 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":134 24F text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":136 253 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":137 255 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":138 25B text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":139 261 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":140 267 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":143 26B text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":145 26F text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":146 271 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":147 277 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":148 27D text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":149 283 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c":156 287 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":49 29F text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":55 29F text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":56 2AF text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":57 2B6 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":58 2C5 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":59 2CC text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":60 2D2 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":61 2D7 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":62 2E7 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":63 2F7 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":64 2FB text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":65 2FC text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":66 302 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":67 303 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":68 309 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":70 30D text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":71 313 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":72 31F text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":73 325 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":75 326 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":76 32C text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic\ftdiv.c":77 330 text13 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":32 348 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":38 34A text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":40 352 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":41 36F text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":42 373 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":43 379 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":45 37F text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":46 398 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":47 3B5 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":48 3B9 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":49 3BD text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":50 3C1 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":51 3CA text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":53 3CF text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":51 3D0 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":44 3D1 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":49 3D1 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":50 3E1 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":51 3EA text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":52 3FA text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":53 3FB text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":54 401 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":55 408 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":56 40A text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":57 40C text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":58 411 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":60 41A text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":61 421 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":63 428 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":64 42C text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":66 435 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":67 43C text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":65 43E text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":70 441 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":71 444 text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":72 44F text11 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":62 458 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":64 458 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":65 460 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":67 467 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":68 46B text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":66 471 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":71 476 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":72 47A text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":73 484 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":70 48A text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":74 48A text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":76 48F text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":77 491 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":75 497 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":79 499 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":80 49B text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":81 4A1 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":82 4A3 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":83 4B3 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":84 4B6 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":86 4B7 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":6 4B8 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":14 4B8 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":15 4C1 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":16 4C7 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":17 4C9 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":18 4CB text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":19 4D2 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":17 4D6 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":22 4D7 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":23 4DE text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":24 4EE text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":25 4F6 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":27 4F7 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":28 4FE text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c":30 502 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":6 50B text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":13 50B text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":14 511 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":15 514 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":16 516 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":17 51D text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":15 521 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":20 522 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":21 532 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":22 53A text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":23 541 text5 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c":25 545 text5 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":91 54E text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":95 54E text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":96 551 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":98 559 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":100 566 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":96 56A text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":104 56B text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":105 576 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":106 57C text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":107 580 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":108 586 text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":109 58A text1 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":110 58D text1 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":15 58E text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":119 58E text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":121 597 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":122 599 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":123 5A2 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":124 5A9 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":125 5B0 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c":128 5B6 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":7 5C0 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":10 5C2 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":12 5C6 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":13 5C8 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":14 5D3 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ltoa.c":19 5DE text3 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":16 5F0 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":17 5F0 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":21 5F4 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":23 5F6 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":24 5FD text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":27 5FF text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":28 601 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":30 601 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":33 602 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":35 607 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":36 608 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":38 60C text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":23 60E text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":44 613 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":45 614 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":47 619 text8 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":49 61B text8 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":35 61C text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":38 61C text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":41 621 text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":42 625 text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":43 62C text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":41 630 text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c":45 631 text10 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":64 646 text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":67 647 text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":68 64B text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":69 64F text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":70 658 text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":71 667 text2 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":52 66C text7 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":55 66D text7 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":57 671 text7 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":58 675 text7 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":59 676 text7 CODE
+"D:\DESARROLLOS\LUXOMETRO_16F1709.X\PD3535.c":60 67E text7 CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2264 67F clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2265 67F clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2266 680 clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2267 680 clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2268 681 clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2269 682 clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2270 683 clrtext CODE
+"D:\t133643\AppData\Local\Temp\s3d0.":2271 684 clrtext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lldiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_i 64 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lltoft@c 20 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ip AF 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_vr A4 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 BD 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_PEN 10B2 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+printVal@i 23 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hintentry 64 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_res 66 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_isr 8 0 CODE 0 intentry dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_fvr AC 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_lux 60 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_RCEN 10B3 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ltoa B80 0 CODE 0 text3 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_main 9E 0 CODE 0 maintext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___sp 0 0 STACK 2 stack D:\t133643\AppData\Local\Temp\s3d0.obj
+btemp 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+start 64 0 CODE 0 init D:\t133643\AppData\Local\Temp\s3d0.obj
+__end_of_snd4094 C38 0 CODE 0 text8 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_wlux A8 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___fttol@f1 46 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@f1 36 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___fttol@lval 4F 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@f1 29 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec D:\t133643\AppData\Local\Temp\s3d0.obj
+ltoa@base 37 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+disChar@ch 77 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ultoa@buf 32 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_printVal A9C 0 CODE 0 text1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@f2 39 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_main$1204 B7 0 BANK1 1 cstackBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ultoa@val 26 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@f2 26 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+___ftpack 8B0 0 CODE 0 text14 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+?___llmod 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+main@i BB 0 BANK1 1 cstackBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@f3 31 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_ultoa 690 0 CODE 0 text4 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of__stringdata E0A 0 STRCODE 0 stringtext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_Resul B2 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_resul A0 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+initPD3535@modo 77 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@cntr 44 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@cntr 30 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+snd4094@dato 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+?___fttol 46 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_PIE1bits 91 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits 11 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+?___ftmul 36 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_LATBbits 10D 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_TMR0IF 5A 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___int_sp 0 0 STACK 2 stack D:\t133643\AppData\Local\Temp\s3d0.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_WPUBbits 20D 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+?___lldiv 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+?___ftdiv 26 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lltoft C38 0 CODE 0 text10 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_SSPBUF 211 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ADRESH 9C 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_ADRESL 9B 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+ultoa@base 2A 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+_RB4PPS E9C 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hsfr4 0 0 ABS 0 sfr4 -
+_RB6PPS E9E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+pic14e$flags 7E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@f3_as_product 41 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__end_of___ftpack 970 0 CODE 0 text14 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+?___ftpack 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ultoa@c 31 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+ultoa@v 2D 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltoa@cp 3A 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+stackhi 231F 0 ABS 0 - D:\t133643\AppData\Local\Temp\s3d0.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+stacklo 206D 0 ABS 0 - D:\t133643\AppData\Local\Temp\s3d0.obj
+isr@cnt 68 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ad_res 5C 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lmul B1C 0 CODE 0 text9 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hinit 64 0 CODE 0 init -
+__Linit 64 0 CODE 0 init -
+__end_of_initPD3535 CFE 0 CODE 0 text7 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of_main 3D6 0 CODE 0 maintext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_snd4094 BE0 0 CODE 0 text8 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+___lmul@multiplier 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+initPD3535@dato 78 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@sign 45 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+end_of_initialization 96 0 CODE 0 cinit dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@sign 35 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_initPD3535 CD8 0 CODE 0 text7 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lmul@multiplicand 76 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+_SSP1ADD 212 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_TRISBbits 8D 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___lltoft C8C 0 CODE 0 text10 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+?___lltoft 20 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftmul@exp 40 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 -
+__Lbank4 0 0 ABS 0 bank4 -
+__end_of___lmul B80 0 CODE 0 text9 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv@exp 34 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 ABS 0 bank6 -
+__Lbank6 0 0 ABS 0 bank6 -
+__size_of_initPD3535 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Lbank9 0 0 ABS 0 bank9 -
+_SSPCON2bits 216 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext1 A9C 0 CODE 0 text1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext2 C8C 0 CODE 0 text2 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext3 B80 0 CODE 0 text3 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext4 690 0 CODE 0 text4 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext5 A16 0 CODE 0 text5 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext6 970 0 CODE 0 text6 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext7 CD8 0 CODE 0 text7 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__ptext8 BE0 0 CODE 0 text8 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext9 B1C 0 CODE 0 text9 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__pcstackBANK1 B7 0 BANK1 1 cstackBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__pdataCOMMON 7A 0 COMMON 1 dataCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of_printVal 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_OPA2CONbits 515 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of__initialization 96 0 CODE 0 cinit dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_SSP1CONbits 215 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+printVal@str 20 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_bMedida 6A 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+ltoa@buf 3B 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+ltoa@val 33 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+___llmod A16 0 CODE 0 text5 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___lldiv A16 0 CODE 0 text6 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_disChar C8C 0 CODE 0 text2 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+__end_of_isr 64 0 CODE 0 intentry dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftpack@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hspace_1 BD 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+?___lmul 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+___fttol 7A2 0 CODE 0 text11 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hcinit 9E 0 CODE 0 cinit -
+___ftmul 3D6 0 CODE 0 text12 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lcinit 68 0 CODE 0 cinit -
+___lldiv 970 0 CODE 0 text6 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftdiv 53E 0 CODE 0 text13 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of_snd4094 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___fttol@exp1 53 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+clear_ram0 CFE 0 CODE 0 clrtext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftpack@arg 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__Hbank10 0 0 ABS 0 bank10 -
+__pbssBANK0 5C 0 BANK0 1 bssBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+_SSP1CON2 216 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__size_of_ltoa 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lbank21 0 0 BANK21 1 bank21 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__pstringtext E00 0 STRCODE 0 stringtext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__ptext10 C38 0 CODE 0 text10 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__ptext11 7A2 0 CODE 0 text11 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__ptext12 3D6 0 CODE 0 text12 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__ptext13 53E 0 CODE 0 text13 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+_ADCON0bits 9D 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_ADCON1bits 9E 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank28 0 0 BANK28 1 bank28 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__ptext14 8B0 0 CODE 0 text14 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+disChar@pos 7A 0 COMMON 1 dataCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of_disChar 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of_ultoa 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___llmod@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___fttol@sign1 4E 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_OSCCONbits 99 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hend_init 68 0 CODE 0 end_init -
+__Lend_init 64 0 CODE 0 end_init -
+___lldiv@divisor 72 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___ftpack@exp 75 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___ftmul 53E 0 CODE 0 text12 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of_disChar CD8 0 CODE 0 text2 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___llmod A9C 0 CODE 0 text5 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__stringdata E00 0 STRCODE 0 stringtext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+disChar@buff 78 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+intlevel0 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+__end_of_ltoa BE0 0 CODE 0 text3 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_SSP1STAT 214 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+intlevel1 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+intlevel2 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+___lltoft@exp 25 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+intlevel3 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+intlevel4 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+intlevel5 0 0 CODE 0 functab D:\t133643\AppData\Local\Temp\s3d0.obj
+_SSP1CON2bits 216 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of_ultoa 7A2 0 CODE 0 text4 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+snd4094@i 75 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+start_initialization 68 0 CODE 0 cinit dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lldiv@quotient 21 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 9E 0 CODE 0 maintext dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___fttol 8B0 0 CODE 0 text11 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__pidataCOMMON E0A 0 CODE 0 idataCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__initialization 68 0 CODE 0 cinit dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___llmod@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of_printVal B1C 0 CODE 0 text1 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___llmod@counter 21 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lmul@product 20 0 BANK0 1 cstackBANK0 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__end_of___ftdiv 690 0 CODE 0 text13 dist/default/production\LUXOMETRO_16F1709.X.production.obj
+__size_of___llmod 0 0 ABS 0 - dist/default/production\LUXOMETRO_16F1709.X.production.obj
+___lldiv@dividend 76 0 COMMON 1 cstackCOMMON dist/default/production\LUXOMETRO_16F1709.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+intentry 0 4 8 681 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 C 1
+cstackBANK0 1 20 20 4B 1
+bssBANK1 1 A0 A0 1D 1
+stringtext 0 700 E00 5 2
+idataCOMMON 0 705 E0A 2 2
