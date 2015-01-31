@@ -24,21 +24,17 @@
 unsigned long ad_res;
 volatile unsigned int res;
 volatile BOOL bMedida = FALSE;
-LONG resul;
-volatile LONG wlux;
+//LONG resul;
+//volatile LONG wlux;
 unsigned long lux;
-float ip;
 unsigned long vr;
-float fvr;
-int i;
 char Resul[5];
+
+//*****************************************************
 
 void main(void) {
 
-
-    unsigned char temp;
     int i;
-
 
     OSCCONbits.SCS = 0b10;
     OSCCONbits.IRCF = 0b1111; //16Mhz
@@ -116,13 +112,47 @@ void main(void) {
 
             ad_res /= 32;
             vr = (ad_res * 1000 / 1024)*4900; //para eliminar float se x1000
-           
+
             ////sensibilidad 10k * 10e-8 A/lux= 0.1mv/lux
             //sensibilidad 100k * 10e-8 A/lux= 1mv/lux
             //sensibilidad 1M * 10e-8 A/lux = 10mv/lux
             //vr/1000=xxxx mV ,para 10mV xxxx/10 -> 1e4
             lux = (vr / 1e4) * 2;
-            ltoa(Resul, lux, 10);
+            if (lux < 1) {
+                lux = 1;
+                initPD3535(BRI100);
+            }
+            if (lux < 90) {
+
+                initPD3535(BRI100);
+            }
+            if (lux > 100) {
+
+                initPD3535(BRI50);
+            }
+            if (lux > 500) {
+
+                initPD3535(BRI25);
+            }
+            if (lux > 999) {
+                lux = 999;
+                initPD3535(BRI25);
+            }
+            //ltoa(Resul, lux, 10);
+            //Resul[0] = lux / 1000;
+            //lux %= 1000;
+            Resul[0] = (lux / 100) + 0x30;
+            if (Resul[0] == '0')
+                Resul[0] = ' ';
+
+            lux %= 100;
+            Resul[1] = (lux / 10) + 0x30;
+            if (Resul[1] == '0')
+                Resul[1] = ' ';
+            Resul[2] = (lux % 10) + 0x30;
+            Resul[3] = 'L';
+            Resul[4] = '\0';
+
             printVal(Resul);
 
             bMedida = FALSE;

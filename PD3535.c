@@ -91,6 +91,9 @@ void disCharPos(char ch, int pos) {
 void printVal(char *str) {
 
     int i;
+    int length();
+
+   
 
     i = 0;
     while (*str) {
@@ -101,6 +104,7 @@ void printVal(char *str) {
 
     }
 
+    /*
     if (i < 4) {
         if (i == 3)
             disChar('L');
@@ -108,6 +112,6 @@ void printVal(char *str) {
             disChar(' ');
             disChar('L');
         }
-    }
+    }*/
 
 }
