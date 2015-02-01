@@ -122,11 +122,11 @@ void main(void) {
                 lux = 1;
                 initPD3535(BRI100);
             }
-            if (lux < 90) {
+            if (lux < 100) {
 
                 initPD3535(BRI100);
             }
-            if (lux > 100) {
+            if (lux > 100 && lux < 500) {
 
                 initPD3535(BRI50);
             }
@@ -142,14 +142,15 @@ void main(void) {
             //Resul[0] = lux / 1000;
             //lux %= 1000;
             Resul[0] = (lux / 100) + 0x30;
-            if (Resul[0] == '0')
-                Resul[0] = ' ';
-
             lux %= 100;
             Resul[1] = (lux / 10) + 0x30;
-            if (Resul[1] == '0')
-                Resul[1] = ' ';
             Resul[2] = (lux % 10) + 0x30;
+
+            if (Resul[0] == '0'){
+                Resul[0] = ' ';
+                if (Resul[1] == '0')
+                   Resul[1] = ' ';
+            }
             Resul[3] = 'L';
             Resul[4] = '\0';
 
